@@ -1,0 +1,15 @@
+
+Entités et leurs propriétés du MCD des Commandes d'un magasin :
+
+- "produit" possède les propriétés suivantes : code, libellé, prix unitaire
+- "client" possède les propriétés suivantes : nom, prénom, adresse, numéro de client (nécessaire par la suite)
+- "commande" possède les propriétés suivantes : date de commande, adresse de livraison, numéro de commande (nécessaire par la suite)
+
+Associations entres les différentes entités du MCD des Commandes d'un magasin :
+
+Un client passe de 0 à N commandes. Une commande appartient à 1 et 1 seul client.
+Une commande comprend de 1 à N produits. Un produit fait partie de 0 à N commandes.
+Cette dernière association qui se manifesterait sous la forme d'une cardinalité N-N nous oblige à créer une association porteuse de propriétés (table intermédiaire).
+Cette nouvelle entité "Contenu" aura pour propriétés : quantité du produit (code du produit et numéro de commande à ajouter lors du passage au MPD).
+
+

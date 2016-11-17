@@ -1,0 +1,7 @@
+
+Associations entres les différentes entités du MCD de la Gestion d'école :
+
+Un élève fréquente de 1 à N classes. Une classe comprend 1 à N élèves.
+Une classe possède 1 à N professeurs. Une professeur enseigne à 1 ou plusieurs (N) classes.
+Un professeur enseigne de 0 à N matières. Une matière (est enseignée) par 0 à N professeurs.
+Une classe apprend de 1 à N matières. Une matière (est apprise) par 0 à N classes.
